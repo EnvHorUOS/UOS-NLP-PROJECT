@@ -75,3 +75,4 @@ $ python3 03row_input.py first_preprocessing.tsv(input 파일) GCF_000001405.40_
 
 ## 참고 내용
 #### ```~_p``` 파일의 경우 병원성 변이 정보를 Parsing 하는 코드
+#### ```conda install -c conda-forge biopython``` 필요
