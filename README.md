@@ -11,24 +11,26 @@
 <br>
 <br>
 
-## 2. 프로젝트 기간
+## 2. 프로젝트 기간 및 역할
 #### 프로젝트 기간 : 2024.10 ~ 2024.12
 - 10월 : 아이디어 탐색 및 주제 선정
 - 11월 : DATASET 구축
 - 12월 : NLP Model 구축
 #### 프로젝트 발표일 : 2024.12.18.(수)
 <br>
-<br>
 
-## 3. 담당 역할
 #### 전처리의 경우 각자 진행했으며, 나머지 활동은 함께 회의를 통해 개선해나감
 - 박자영 : 모델 및 주제 정리, ClinVar Data 전처리, 결과 분석, PPT 제작
 - 신민경 : COSMIC Data 전처리, 모델 주요 베이스라인 코드 구축, 결과 분석
+<div align="center">
+<img width="882" alt="스크린샷 2025-01-03 오후 12 21 08" src="https://github.com/user-attachments/assets/2430d0ee-0c24-47ce-b6b8-65bd1a597f82" />
+</div>
+
 <br>
 <br>
 
-## 4. 프로젝트 구성
-### 4-1. Introduction
+## 3. 프로젝트 구성
+### 3-1. Introduction
 #### [ 주제 선정 배경 ]
 **(주제) 병원성 변이 분류를 위한 DNABERT 기반 분류 모델 개발**
 - 인가의 질병 및 치료 연구의 토대가 될 수 있는 병원선 변이 분류를 위한 모델 개발을 목적으로 함.
@@ -57,7 +59,7 @@
   - 번역, 생성, 질의응답 등 다양한 작업에서 뛰어난 성능
 <br>
 
-### 4-2. Methodology
+### 3-2. Methodology
 #### DNABERT-2 (BERT를 기반으로 개발된 생물정보학 도구)
 - DNA 서열의 특징을 학습하여 변이 예측, 병원성 분석 등에 활용
 - ver1에서는 k-mer 토큰화를 적용하여 DNA 서열 데이터를 처리하나 ver2에서는 BPE 토큰화 활용
@@ -67,14 +69,17 @@
 1. DNABERT에 염기서열 정보를 입력하여 Feature Vector 추출 (자체적 Classification도 진행)
 2. Feature Vector를 ML Ensemble 모델의 입력값으로 사용
 3. 병원성 여부 Binary Classification 진행
-<br>
+<div align="center">
+<img width="443" alt="스크린샷 2025-01-03 오후 12 18 20" src="https://github.com/user-attachments/assets/48537933-5c71-4db3-b98d-ca0eb0bdd69f" />
+</div>
+<br/>
 
-### 4-3. Data Preprocessing, Model Train
+### 3-3. Data Preprocessing, Model Train
 - PREPROCESSING > COSMIC, CLINVAR, INPUT 디렉토리의 READ ME 참조
 - MODEL > DNABERT, Classification 디렉토리 READ ME 참조
 <br>
  
-### 4-5. Results & Discussion
+### 3-4. Results & Discussion
 #### [ 모델 성능 ]
 Ensemble 기준
 - Accuracy: 94%
@@ -97,7 +102,7 @@ Ensemble 기준
 <br>
 <br>
 
-## 5. 프로젝트 소감
+## 4. 프로젝트 소감
 
 | 이름 | 소감 |
 | --- | --- | 
@@ -106,7 +111,7 @@ Ensemble 기준
 <br>
 <br>
 
-## 6. Citation
+## 5. Citation
 [ DNABERT-2 ]
     @misc{zhou2023dnabert2,
       title={DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome}, 
