@@ -1,6 +1,10 @@
 ## UOS-NLP-PROJECT (BIONLP)
 #### 프로젝트명 [ Pathogenicity Classification with Cancer Sequence Data ]
-돌연변이 서열 정보를 활용한 병원성 변이 분류 프로젝트를 진행하고자 한다. NLP 모델을 활용하여 그 성능을 강화하고자 했다.<br>
+돌연변이 서열 정보를 활용한 병원성 변이 분류 프로젝트를 진행하고자 한다. NLP 모델을 활용하여 그 성능을 강화하고자 했다.
+<div align="center">
+<img width="1440" alt="스크린샷 2025-01-03 오후 12 54 27" src="https://github.com/user-attachments/assets/59be5451-fc94-4177-a447-15406122272b" />
+
+</div>
 <br>
 <br>
 
