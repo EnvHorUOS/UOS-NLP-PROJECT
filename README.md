@@ -76,9 +76,9 @@
 #### ML : XGBoost, LightGBM, Ensemble
  
 #### [ 모델 구성 ]
-1. DNABERT에 염기서열 정보를 입력하여 Feature Vector 추출 (자체적 Classification도 진행)
-2. Feature Vector를 ML Ensemble 모델의 입력값으로 사용
-3. 병원성 여부 Binary Classification 진행
+> 1. DNABERT에 염기서열 정보를 입력하여 Feature Vector 추출 (자체적 Classification도 진행)
+> 2. Feature Vector를 ML Ensemble 모델의 입력값으로 사용
+> 3. 병원성 여부 Binary Classification 진행
 <div align="center">
 <img width="443" alt="스크린샷 2025-01-03 오후 12 18 20" src="https://github.com/user-attachments/assets/48537933-5c71-4db3-b98d-ca0eb0bdd69f" />
 </div>
@@ -97,14 +97,14 @@ Ensemble 기준
  
 #### [ 한계점 및 개선 방향 ]
 #### 한계점: overfitting
-**원인**
-- undersampling으로 인한 절대적인 데이터 부족
-- 병원성 데이터(COSMIC)와 비병원성 데이터(Clinvar)의 분포 차이
+> **원인**
+> - undersampling으로 인한 절대적인 데이터 부족
+> - 병원성 데이터(COSMIC)와 비병원성 데이터(Clinvar)의 분포 차이
 
-**개선 방향**
-- 추가적인 데이터 확보 및 데이터 불균형 해소
-- SNV 외에도 indel, frameshift 등 다양한 변이 정보를 추가적으로 활용
-- 분포가 다른 데이터셋을 test set으로 활용하여 일반화 성능 검사 필요
+> **개선 방향**
+> - 추가적인 데이터 확보 및 데이터 불균형 해소
+> - SNV 외에도 indel, frameshift 등 다양한 변이 정보를 추가적으로 활용
+> - 분포가 다른 데이터셋을 test set으로 활용하여 일반화 성능 검사 필요
  
 #### [ 의의 ]
 - 프로젝트 설계, 데이터 수집부터 모델링까지 모두 직접 진행한 첫 프로젝트
@@ -122,7 +122,8 @@ Ensemble 기준
 <br>
 
 ## 5. Citation
-[ DNABERT-2 ]
+#### [ DNABERT-2 ]
+```
     @misc{zhou2023dnabert2,
       title={DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome}, 
       author={Zhihan Zhou and Yanrong Ji and Weijian Li and Pratik Dutta and Ramana Davuluri and Han Liu},
@@ -131,8 +132,11 @@ Ensemble 기준
       archivePrefix={arXiv},
       primaryClass={q-bio.GN}
     }
+```
 <br>
 
-[ UBAI ]
-- 본 프로젝트는 서울시립대학교 도시과학빅데이터·AI연구원의 슈퍼컴퓨팅 자원을 지원 받아 수행되었습니다.
-- The authors acknowledge the Urban Big Data and AI Institute of the University of Seoul supercomputing resources (http://ubai.uos.ac.kr) made available for conducting the research reported in this project.
+#### [ UBAI ]
+```
+본 프로젝트는 서울시립대학교 도시과학빅데이터·AI연구원의 슈퍼컴퓨팅 자원을 지원 받아 수행되었습니다.
+The authors acknowledge the Urban Big Data and AI Institute of the University of Seoul supercomputing resources (http://ubai.uos.ac.kr) made available for conducting the research reported in this project.
+```
