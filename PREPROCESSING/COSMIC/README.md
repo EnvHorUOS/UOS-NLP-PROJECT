@@ -11,7 +11,7 @@
 # COSMIC Preprocessing
 ## 1. VCF_CODE : vcf 파일을 filtering 하기 위한 코드
 ### VP1. SNV변이만 출력
-- SO_TERM == SNV 인 행만 filtering
+- ```SO_TERM == SNV``` 인 행만 filtering
 
 ```bash
 python VP1.print_SNV_line.py 0.CompleteTargetedScreensMutant_Normal.vcf V1.SNV_output.vcf
