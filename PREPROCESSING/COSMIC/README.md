@@ -19,7 +19,7 @@ python VP1.print_SNV_line.py 0.CompleteTargetedScreensMutant_Normal.vcf V1.SNV_o
 <br>        
 
 ### VP2. exon영역 안의 변이만 출력
-- 정규표현식 HGVSC=ENST00000378288.8:c.337C>T의 형식에 맞는 행만 출력
+- 정규표현식 ```HGVSC=ENST00000378288.8:c.337C>T```의 형식에 맞는 행만 출력
 
 ```bash
 python VP2.print_CDS_mut_line.py V1.SNV_output.vcf V2.CDS_output.vcf
@@ -29,8 +29,8 @@ python VP2.print_CDS_mut_line.py V1.SNV_output.vcf V2.CDS_output.vcf
 
 ## 2. TSV_CODE : tsv file을 filtering 하기 위한 코드
 ### TP1. 임상정보가 존재하는 행 & 체세포 변이로 확인된 행만 출력
-- 임상정보 존재: df["POSITIVE_SCREEN"] == "y”
-- 체세포 변이로 확인: df["MUTATION_SOMATIC_STATUS"] != "Variant of unknown origin”
+- 임상정보 존재: ```df["POSITIVE_SCREEN"] == "y”```
+- 체세포 변이로 확인: ```df["MUTATION_SOMATIC_STATUS"] != "Variant of unknown origin”```
 
 ```bash
 python TP1.filtering_not_positive_and_unknown.py 0.CompleteTargetedScreensMutant.tsv T1.filtering_output1.tsv
@@ -56,7 +56,7 @@ python MP1.vcf_filtering_by_tsv.py T2.filtering_output2.tsv V2.CDS_output.vcf M1
 <br>     
 
 ### MP2. 주 전사체 정보만 남기기
-- 전사체가 많은 유전자에 가중치가 가는 것을 방지하기 위해서 주 전사체만 남겨주기(IS_CANONICAL==y)
+- 전사체가 많은 유전자에 가중치가 가는 것을 방지하기 위해서 주 전사체만 남겨주기(```IS_CANONICAL==y```)
 
 ```bash
 python MP2.main_transcript.py M1.merge_output.vcf M2.main_transcript.vcf
