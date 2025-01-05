@@ -40,7 +40,7 @@ python TP2.driver_filtering.py T1.filtering_output1.tsv T2.filtering_output2.tsv
 ```
         
 
-## MERGE_CODE: filtering된 vcf 파일과 tsv 파일을 합쳐서 최종 input 형식으로 만드는 코드
+## 3. MERGE_CODE: filtering된 vcf 파일과 tsv 파일을 합쳐서 최종 input 형식으로 만드는 코드
 ### MP1. TSV와 VCF에 모두 포함된 mutation만 필터링(최종 파일 형태 : VCF)
 
 ```bash
