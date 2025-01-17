@@ -14,7 +14,7 @@
 <br>
 
 ## ML
-#### 1. 사전 학습 과정에서 미리 저장해둔 **Feature Vector** 불러오기
+#### 1. 학습 과정에서 미리 저장해둔 **Feature Vector** 불러오기
 ```
 # 파일 경로 설정
 train_feature_file = f"{base_path}/FeatureVector/train_features.npy"
