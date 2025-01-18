@@ -8,6 +8,7 @@
 python DP1.tsv_to_DNABERT_input_format.py M3.COSMIC_final.tsv D1.COSMIC_DNABERT.tsv
 python DP1.tsv_to_DNABERT_input_format.py M3.Clinvar_final.tsv D1.Clinvar_DNABERT.tsv
 ```
+<br>
     
 ## DP2. 병원성 데이터와 비병원성 데이터 병합하기 (undersampling)
 - 병원성 변이가 더 적으므로 병원성 변이 수에 맞추어 undersampling 및 shuffling 해주었다.
@@ -17,6 +18,7 @@ python DP1.tsv_to_DNABERT_input_format.py M3.Clinvar_final.tsv D1.Clinvar_DNABER
 ```bash
 python D2.undersampling.py D1.COSMIC_DNABERT.tsv D1.Clinvar_DNABERT.tsv D2.undersampling.csv
 ```
+<br>
 
 ## DP3.  train.csv, dev.csv, test.csv로 split
 - train : dev : test = 70 : 15 : 15 비율로 나눠준다.
@@ -24,3 +26,4 @@ python D2.undersampling.py D1.COSMIC_DNABERT.tsv D1.Clinvar_DNABERT.tsv D2.under
 ```bash
 python DP3.split_train_dev_test.py D2.undersampling.csv train.csv dev.csv test.csv
 ```
+<br>
